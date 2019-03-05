@@ -68,7 +68,7 @@ Josh has worked in trying to detect the spatial closeness of the current set of 
 
 ### Gábor Kismihók and Daniel Spikol: Feedback for students
 
-Gábor and Daniel have been working in how to provide feedback to students when they are stuck in the process of solving a puzzle. Here are their [final thoughts](Shadowspect Hints and Score.pdf).
+Gábor and Daniel have been working in how to provide feedback to students when they are stuck in the process of solving a puzzle. Here are their [final thoughts](HintsAndScore.pdf).
 
 ### José A. Ruipérez Valiente: Measuring puzzle difficulty
 
