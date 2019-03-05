@@ -76,7 +76,7 @@ José has been working on how to measure puzzle difficulty in order to improve t
 
 ### Matthew Jone: Attempts vs succcess
 
-Matthew's goal from this project in the LAKAthon was looking at the number of success verses attempts in each project. I wanted to see which shapes were used by everyone that was making an attempt verses the ones that failed. Some interesting things I found (code in [this script](DMatt_Hackathon.ipynb)): 
+Matthew's goal from this project in the LAKAthon was looking at the number of success verses attempts in each project. I wanted to see which shapes were used by everyone that was making an attempt verses the ones that failed. Some interesting things I found (code in [this script](Matt_Hackathon.ipynb)): 
 
 - Some of the solutions used shapes that weren’t in the actual solution, so there were many people completing the puzzle using alternate solutions.
 
