@@ -30,7 +30,7 @@ We will be looking at the following two data sources (we will provide the data a
 We provide an [initial script](LAK_Hackaton.ipynb) with basic feature engineering.
 
 
-## Challenges
+## Orinial proposed challenges
 
 1. Game analytics 
 	- Level difficulty (efficiency in number of attempts to solve, number of required actions, time per level)
@@ -56,3 +56,30 @@ We provide an [initial script](LAK_Hackaton.ipynb) with basic feature engineerin
 	- CCSS.MATH.CONTENT.HSG.CO.D.12: Make formal geometric constructions with a variety of tools and methods (compass and straightedge, string, reflective devices, paper folding, dynamic geometric software, etc.)
 	- Ratio: Puzzle requires players to gauge the length/height/width of silhouettes to estimate how big objects need to be scaled, how many objects they need, or how far apart objects have to be
 
+	
+## Results after *hacking* the challenge
+
+Josh Ring, Matthew Jone, Daniel Spikol, Gábor Kismihók and José A. Ruipérez Valiente participated in this challenge. We have grouped to work in several areas. 
+
+### Josh Ring: Spatial closeness to solution
+
+Josh has worked in trying to detect the spatial closeness of the current set of shapes of the student to the final solution by geometrically comparing the current shape setup and the one in the solution. His code is in [this script](WIP_code.py).
+
+
+### Gábor Kismihók and Daniel Spikol: Feedback for students
+
+Gábor and Daniel have been working in how to provide feedback to students when they are stuck in the process of solving a puzzle. Here are their [final thoughts](Shadowspect Hints and Score.pdf).
+
+### José A. Ruipérez Valiente: Measuring puzzle difficulty
+
+José has been working on how to measure puzzle difficulty in order to improve the design of puzzles and learning pathways. There are three metrics that has been considered as part of the  difficulty: time invested in puzzle, number of actions and percentage of incorect, all of them following the trend that the higher the metric is, the most difficult. We have also designed a composite measure based on these three variables by standarizing each variable separately, summing the three of them and normalizing from 0 to 1. Therefore, 0 would be the easiest puzzle and 1 the hardest in terms of the three measures. The code for this is in [this script](puzzle_difficulty.ipynb). We plot these metrics by puzzle using the puzzle order in the game in [this plot](DifficultyByPuzzle.png) with this [R script](plot_difficulty.R).
+
+### Matthew Jone: Summary
+
+Matthew's goal from this project in the LAKAthon was looking at the number of success verses attempts in each project. I wanted to see which shapes were used by everyone that was making an attempt verses the ones that failed. Some interesting things I found (code in [this script](DMatt_Hackathon.ipynb)): 
+
+- Some of the solutions used shapes that weren’t in the actual solution, so there were many people completing the puzzle using alternate solutions.
+
+- Even though many of the puzzles had a low success rate and few puzzles were completed , the total actions taken by those who had a success was more than 60% of the total actions. So it seems like many students gave up.
+
+- Some of this could be used to help to inform problem difficulty, a system to provide hints to the user based on all possible solutions. It could also be applied to more factors than just shapes.
