@@ -74,7 +74,7 @@ Gábor and Daniel have been working in how to provide feedback to students when 
 
 José has been working on how to measure puzzle difficulty in order to improve the design of puzzles and learning pathways. There are three metrics that has been considered as part of the  difficulty: time invested in puzzle, number of actions and percentage of incorect, all of them following the trend that the higher the metric is, the most difficult. We have also designed a composite measure based on these three variables by standarizing each variable separately, summing the three of them and normalizing from 0 to 1. Therefore, 0 would be the easiest puzzle and 1 the hardest in terms of the three measures. The code for this is in [this script](puzzle_difficulty.ipynb). We plot these metrics by puzzle using the puzzle order in the game in [this plot](DifficultyByPuzzle.png) with this [R script](plot_difficulty.R).
 
-### Matthew Jone: Summary
+### Matthew Jone: Attempts vs succcess
 
 Matthew's goal from this project in the LAKAthon was looking at the number of success verses attempts in each project. I wanted to see which shapes were used by everyone that was making an attempt verses the ones that failed. Some interesting things I found (code in [this script](DMatt_Hackathon.ipynb)): 
 
